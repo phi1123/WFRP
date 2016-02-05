@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<div class="item item-divider item-assertive" style="text-align:center;margin-top:20px">
+Pick or roll a race
+</div>
+
+<div class="list">
+
+  <a id="Dwarf" class="item item-icon-right" href="#" onclick="choose(this.id)">
+    Dwarf
+    <i id="DwarfCheckOutline" class="icon ion-ios-circle-outline"></i>
+    <i id="DwarfCheck" class="icon ion-ios-checkmark"></i>
+  </a>
+  <a id="Elf" class="item item-icon-right" href="#" onclick="choose(this.id)">
+    Elf
+    <i id="ElfCheckOutline" class="icon ion-ios-circle-outline"></i>
+    <i id="ElfCheck" class="icon ion-ios-checkmark"></i>
+  </a>
+    <a id="Halfling" class="item item-icon-right" href="#" onclick="choose(this.id)">
+    Halfling
+    <i id="HalflingCheckOutline" class="icon ion-ios-circle-outline"></i>
+    <i id="HalflingCheck" class="icon ion-ios-checkmark"></i>
+  </a>
+    <a id="Human" class="item item-icon-right" href="#" onclick="choose(this.id)">
+    Human
+    <i id="HumanCheckOutline" class="icon ion-ios-circle-outline"></i>
+    <i id="HumanCheck" class="icon ion-ios-checkmark"></i>
+  </a>
+</div>
+<button id="continueToStep1" class="button button-block button-assertive" onclick="confirmRace()">
+  Continue
+</button>
+<button onclick="rollRace()" class="button button-block button-assertive">
+  Roll race
+</button>
+</html>

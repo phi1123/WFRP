@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+
+<div class="item item-divider item-assertive" style="text-align:center;margin-top:20px">
+Attributes - <span id="race">RACE</span>
+</div>
+
+<div class="list">
+
+  <div class="item item-button-right" style="background-color: rgb(247,244,242)">
+    <span id="WSSpan">Weapon Skill
+    <span class="span-result" id="WS"> </span></span>
+    <button id="WSRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="WSTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="WSTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="WSBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="WSBestRoll">0</span>
+    <button id="WSKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+   <div id="BSDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Ballistic Skill
+    <span class="span-result" id="BS"> </span>
+    <button id="BSRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="BSTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="BSTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="BSBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="BSBestRoll">0</span>
+    <button id="BSKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="SDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Strength
+    <span class="span-result" id="S"> </span>
+    <button id="SRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="STimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="STimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="SBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="SBestRoll">0</span>
+    <button id="SKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="TDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Toughness
+    <span class="span-result" id="T"> </span>
+    <button id="TRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="TTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="TTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="TBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="TBestRoll">0</span>
+    <button id="TKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="AgDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Agility
+    <span class="span-result" id="Ag"> </span>
+    <button id="AgRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="AgTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="AgTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="AgBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="AgBestRoll">0</span>
+    <button id="AgKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="IntDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Intelligence
+    <span class="span-result" id="Int"> </span>
+    <button id="IntRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="IntTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="IntTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="IntBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="IntBestRoll">0</span>
+    <button id="IntKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="WPDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Willpower
+    <span class="span-result" id="WP"> </span>
+    <button id="WPRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="WPTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="WPTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="WPBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="WPBestRoll">0</span>
+    <button id="WPKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="FelDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Fellowship
+    <span class="span-result" id="Fel"> </span>
+    <button id="FelRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollAttribute(this.id)">Roll</button>
+  </div>
+  <div id="FelTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="FelTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="FelBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="FelBestRoll">0</span>
+    <button id="FelKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+ </div>
+ 
+<button id="quickRoll" onclick="quickRollAll()" class="button button-block button-assertive">
+  Quick-roll all
+</button>
+<button id="keepAll" onclick="keepQuickRoll()" class="button button-block button-energized" style="display:none">
+  Keep best rolls
+</button> 
+
+<button id="continueToStep2" class="button button-block button-assertive" onclick="confirmPrimaryAttributes()">
+  Continue
+</button>
+
+<button id="reset" class="button button-block button-assertive">
+  Reset all attributes
+</button>
+</html>

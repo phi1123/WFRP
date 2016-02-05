@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<div class="item item-divider item-assertive" style="text-align:center;margin-top:20px">
+Secondary Attributes - <span id="race">RACE</span>
+</div>
+
+<div class="list">
+
+  <div class="item item-button-right" style="background-color: rgb(247,244,242)">
+    <span id="ASpan">Attacks
+    <span class="span-result-s-done" id="A"> </span></span>
+  </div>
+  
+   <div id="WDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Wounds
+    <span class="span-result-s" id="W"> </span>
+    <button id="WRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollW()">Roll</button>
+  </div>
+  <div id="WTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="WTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="WBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="WBestRoll">0</span>
+    <button id="WKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+  <div id="SBDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Strength Bonus
+    <span class="span-result-s-done" id="SB"> </span>
+  </div>
+  
+  <div id="TBDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Toughness Bonus
+    <span class="span-result-s-done" id="TB"> </span>
+  </div>
+  
+  <div id="MDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Movement
+    <span class="span-result-s-done" id="M"> </span>
+  </div>
+  
+  <div id="MagDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Magic
+    <span class="span-result-s-done" id="Mag"> </span>
+  </div>
+  
+  <div id="IPDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Insanity Points
+    <span class="span-result-s-done" id="IP"> </span>
+  </div>
+  
+  <div id="FPDiv" class="item item-button-right" style="background-color: rgb(247,244,242)">
+    Fate Points
+    <span class="span-result-s" id="FP"> </span>
+    <button id="FPRoll" class="button button-small button-assertive" style="font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="rollFP()">Roll</button>
+  </div>
+  <div id="FPTimesDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    You rolled 
+    <span class="span-times" id="FPTimes">0</span>
+    <b>times</b>
+    </div>
+  <div id="FPBestRollDiv" class="item item-button-right" style="font-size:13px !important;max-height: 40px;padding-left:40px;padding-bottom:14px !important;padding-top: 10px !important">
+    Best roll
+    <span class="span-broll" id="FPBestRoll">0</span>
+    <button id="FPKeep" class="button button-small button-energized" style="line-height:26px !important;min-height:28px;top:5px !important;bottom:10px !important;font-size: 13px !important;width: 50px !important;display:table-cell;" onclick="keepRoll(this.id)">Keep</button>
+  </div>
+  
+ </div>
+ 
+<!-- <button id="quickRoll" onclick="quickRollAll()" class="button button-block button-assertive"> -->
+<!--   Quick-roll all -->
+<!-- </button> -->
+<!-- <button id="keepAll" onclick="keepQuickRoll()" class="button button-block button-energized" style="display:none"> -->
+<!--   Keep quick roll -->
+<!-- </button>  -->
+
+<button id="continueToStep4" class="button button-block button-assertive" onclick="confirmSecondaryAttributes()">
+  Continue
+</button>
+
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WFRP">
+        <wb-resource deploy-path="/" source-path="/apps/WFRP/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/WFRP/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/WFRP/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/WFRP/windowsphone8"/>
+        <property name="context-root" value="WFRP"/>
+    </wb-module>
+</project-modules>

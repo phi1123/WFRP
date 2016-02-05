@@ -1,0 +1,91 @@
+﻿
+/* Stylesheet content from css/main.css in folder common */
+.item-sub {
+	font-size: 12px !important;
+	height: 40px !important;
+	padding-bottom:10px !important;
+}
+
+.span-broll {
+	margin-left:60px !important;
+	margin-right:20px !important;
+	font-size:13px !important;
+	font-weight: bold;
+}
+
+.span-times {
+	margin-left:37px !important;
+	margin-right:2px !important;
+	font-size: 13px !important;
+	font-weight: bold;
+}
+
+.span-result {
+	position:absolute;
+	top:16px;
+	left:140px;
+}
+
+.span-result-s {
+	position:absolute;
+	top:16px;
+	left:175px;
+}
+
+.span-result-s-done {
+	position:absolute;
+	top:16px;
+	left:175px;
+	color:#ef473a;
+	font-weight:bold;
+}
+
+.span-result-done {
+	color:#ef473a !important;
+	font-weight:bold;
+}
+
+.span-smalltext {
+	font-size: 13px !important;
+}
+
+.span-greyed-out {
+	color: #bfbfbf !important;
+}
+
+.span-smallertext {
+	font-size: 11px !important;
+}
+
+.button-right-bar-mine {
+	position:absolute;
+	max-height:30px !important;
+	right:10px !important;
+}
+
+.selected-career {
+	border-width: 3px !important;
+	border-color: #ef473a;
+}
+
+.td-wide {
+	min-width:100px !important;
+	width:100px !important;
+	padding:2px;
+}
+
+.td-narrow {
+	min-width:30px !important;
+	width:30px !important;
+	padding:2px;	
+}
+
+.td-widest {
+	min-width:200px !important;
+	width:200px !important;
+	padding:2px;		
+}
+/* Stylesheet content from css/main.css in folder windowsphone8 */
+
+/* this CSS file extends the application CSS file found under common\css */
+

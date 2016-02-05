@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+      <title></title>
+        <style>
+        	html, body{
+        		margin: 0;
+        		width: 100%;
+        		overflow:hidden;
+        	}        	
+        </style>
+      <script src="default/worklight/cordova.js"></script>
+
+      <script> 
+	      var mainFile = "index.html";
+	      var skinName = "default";
+
+	     function loadSkinCallback (exists) {
+        if (exists) {
+        cordova.exec(callBack, callBack, 'WLBusyIndicator', "show", []);
+        } else {
+        debug.error("Cannot find skin " + skinName);
+        }
+        function callBack () {
+          cordova.exec(callBack, callBack, 'WLBusyIndicator', "hide", []);
+          document.location.replace(skinName + "/" + mainFile);
+        }
+        }
+
+	     function loadSkin() {
+	      	if (typeof window.getSkinName == "function") {
+	      		skinName = getSkinName();
+	        }
+	        loadSkinCallback(true);
+	    }
+	    document.addEventListener('deviceready', loadSkin, false);
+      </script>
+    </head>
+	<body onload="document.getElementById('content').style.height = screen.height + 'px';" id="content">
+  </body>
+</html>
